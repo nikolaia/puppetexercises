@@ -1,0 +1,6 @@
+[submodule "puppetlabs-powershell"]
+	path = puppetlabs-powershell
+	url = git@github.com:puppetlabs/puppetlabs-powershell.git
+[submodule "modules/powershell"]
+	path = modules/powershell
+	url = git@github.com:puppetlabs/puppetlabs-powershell.git
