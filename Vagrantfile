@@ -23,7 +23,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.provider :virtualbox do |v, override|
     v.memory = 4096
-    v.name = "awesome_magic"
+    v.name = "puppetexercises"
   end
 
   config.vm.network :forwarded_port, guest: 3389, host: 33389, id: "rdp", auto_correct: true
