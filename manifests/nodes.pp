@@ -1,3 +1,3 @@
 node default {
-	notify { 'YOLO': }
+	include helloworld
 }

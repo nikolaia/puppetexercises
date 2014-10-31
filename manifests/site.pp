@@ -1,7 +1,7 @@
 import "nodes.pp"
 
 exec { 'Test':
-  command   => '$(Write-Host "YOLO 2.0")',
+  command   => '$(Write-Host "Hello World from Powershell!")',
   provider  => powershell,
   logoutput => true
 }
