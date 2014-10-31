@@ -3,13 +3,17 @@ class helloworld {
 		'Hello World!': 
 	}
 
-	file {'C:\helloworld.ps1':
+	file {'C:\Scripts\HelloWorld':
+    ensure => "directory",
+	}
+
+	file {'C:\Scripts\HelloWorld\helloworld.ps1':
 		source 	=> "puppet:///modules/helloworld/helloworld.ps1"
 	}
 
-	exec { 'runPowershell':
+	exec { 'runHelloWorld':
 	  command   => '.\helloworld.ps1',
-	  cwd				=> 'C:\\',
+	  cwd				=> 'C:\Scripts\HelloWorld',
 	  provider  => powershell,
 	  logoutput => true
 	}
